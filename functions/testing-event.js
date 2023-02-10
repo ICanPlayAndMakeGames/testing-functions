@@ -3,7 +3,7 @@ const noblox = require('noblox.js')
 
 exports.handler =  function(event, context) {
   
- function idk() {
+async function idk() {
    return {
      statusCode: 200,
      body: JSON.stringify({ message: "Hello World" }),
