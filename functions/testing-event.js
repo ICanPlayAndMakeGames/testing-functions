@@ -1,18 +1,21 @@
 const https = require('https');
 const noblox = require('noblox.js')
 
-exports.handler =  function(event, context) {
-  
-async function idk() {
-   return {
-     statusCode: 200,
-     body: JSON.stringify({ message: "Hello World" }),
-   }
- }
-  
-  async function testing() {
-    await idk();
-    console.log("Ayyy finished")
+exports.handler = function (event, context) {
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
-  testing()
+
+  async function demo() {
+    for (let i = 0; i < 60; i++) {
+      let date = new Date();
+      await sleep(1000);
+      console.log(date.toLocaleString(), i);
+    }
+    console.log("Done");
+  }
+
+  demo();
+};
+
 }
