@@ -4,8 +4,8 @@ const noblox = require('noblox.js')
 exports.handler = async function(event, context, callback) {
   
   return {
-    console.log("Hello there")
     statusCode:200,
-    body:JSON.stringify({message:"Hello guys!"})
+    body:JSON.stringify({message:"Hello guys!"}),
+     console.log("Hello there"),
    }
 }
