@@ -14,7 +14,12 @@ exports.handler = async function (event, context) {
        
        
    const conversations = await noblox.getUserConversations()
-   console.log(conversations)
+   
+   for (var i = 0; i < conversations; i++) {
+    console.log(conversations[i].id);
+    //Do something
+}
+   
   noblox.sendChatMessage(20627756819,"TestingW").then(function(){
        console.log("finished doing this")
     }).catch(function(error) {
