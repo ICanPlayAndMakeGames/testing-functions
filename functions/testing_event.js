@@ -15,7 +15,7 @@ exports.handler = async function (event, context) {
        
    const conversations = await noblox.getUserConversations()
    
-   for (var i = 0; i < conversations; i++) {
+   for (var i = 0; i < conversations.length; i++) {
     console.log(conversations[i].id);
     //Do something
 }
