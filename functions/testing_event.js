@@ -8,6 +8,7 @@ exports.handler = async function (event, context) {
    console.log(player.UserName,player.UserID)
    const conversations = await noblox.getUserConversations()
    console.log(conversations)
+   noblox.sendChatMessage(20627756819,"TestingW")
    noblox.sendFriendRequest(438354062)
    
    
