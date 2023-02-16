@@ -5,7 +5,7 @@ const axios = require('axios')
 exports.handler = async function (event, context) {
    
    console.log("Yo")
-   const Response = await axios.get('https://games.roblox.com/v1/games?universeIds=2619619496')
+   const Response = await axios.get("https://games.roblox.com/v1/games?universeIds=2619619496")
 
    if (Response) {
     console.log("YE WE DID IT")
