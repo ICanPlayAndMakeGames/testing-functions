@@ -7,10 +7,10 @@ exports.handler = async function (event, context) {
    console.log("Yo")
    axios.get('https://games.roproxy.com/v1/games?universeIds=2619619496')
   .then(function (response) {
-    console.log(response);
+    console.log(response,"Ayy this the response);
   })
   .catch(function (error) {
-    console.log(error);
+    console.log(error,"Error lol");
   })
   .finally(function () {
   });
