@@ -5,7 +5,11 @@ import axios from 'axios'
 exports.handler = async function (event, context) {
    
   
-   
+    setTimeout(() => { axios.get('https://typical-jet-diadem.glitch.me/TestingW').then(function(response){
+    res.send("finished")
+   }).catch(function(error){
+    console.log(error)
+   }) }, 270000);
    
  
   
